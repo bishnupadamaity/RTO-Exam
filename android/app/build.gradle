@@ -97,9 +97,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.debuggerappstructure"
+    namespace "com.messcan"
     defaultConfig {
-        applicationId "com.debuggerappstructure"
+        applicationId "com.messcan"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

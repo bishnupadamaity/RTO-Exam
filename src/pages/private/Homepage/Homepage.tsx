@@ -26,7 +26,7 @@ const HomeUserCard = () => {
       }}>
       <Typography
         color={COLOR.black}
-        fontWeight="700"
+        fontWeight="500"
         fontSize={responsiveFontSize(2.9)}>
         Welcome back, Sarah
       </Typography>
@@ -73,8 +73,8 @@ const ImageCard = () => {
         <Typography
           color={COLOR.white}
           style={{position: 'absolute', bottom: 35, left: 10}}
-          fontSize={responsiveFontSize(3.3)}
-          fontWeight="700">
+          fontSize={responsiveFontSize(3.2)}
+          fontWeight="600">
           Prepare Tests
         </Typography>
         <Typography
@@ -163,7 +163,7 @@ const ActionCards = () => {
           }}>
           <Typography
             color={COLOR.black}
-            fontWeight="700"
+            fontWeight="600"
             fontSize={responsiveFontSize(2.4)}>
             {item.title}
           </Typography>
@@ -235,7 +235,7 @@ const ProgressCards = () => {
       }}>
       <Typography
         color={COLOR.black}
-        fontWeight="700"
+        fontWeight="600"
         fontSize={responsiveFontSize(2.4)}>
         Your Progress
       </Typography>
@@ -317,8 +317,8 @@ const RecentActivity = () => {
         <View style={{flexDirection: 'column', gap: 5}}>
           <Typography
             color={COLOR.black}
-            fontWeight="700"
-            fontSize={responsiveFontSize(2.4)}>
+            fontWeight="600"
+            fontSize={responsiveFontSize(2.2)}>
             {item.title}
           </Typography>
           <Typography color={COLOR.gray} fontSize={responsiveFontSize(1.6)}>
@@ -340,7 +340,7 @@ const RecentActivity = () => {
       }}>
       <Typography
         color={COLOR.black}
-        fontWeight="700"
+        fontWeight="600"
         fontSize={responsiveFontSize(2.4)}>
         Recent Activity
       </Typography>

@@ -25,4 +25,28 @@ export const AppRoutes: AppRoute[] = [
     name: 'RootPage',
     component: BottomTabNavigator,
   },
+  {
+    name: 'QBank',
+    component: Private.QBank,
+  },
+  {
+    name: 'BasicTrafficRules',
+    component: Private.BasicTrafficRules,
+  },
+  {
+    name: 'RoadSignAndSignals',
+    component: Private.RoadSignAndSignals,
+  },
+  {
+    name: 'RoadSigns',
+    component: Private.RoadSigns,
+  },
+  {
+    name: 'Exam',
+    component: Private.Exam,
+  },
+  {
+    name: 'ExamTaker',
+    component: Private.ExamTaker,
+  },
 ];

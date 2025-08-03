@@ -17,15 +17,15 @@ const BottomTabNavigator = ({route}: any) => {
     },
     {
       name: 'Q.Bank',
-      component: Private.Homepage,
+      component: Private.QBank,
     },
     {
       name: 'Exam',
-      component: Private.Homepage,
+      component: Private.Exam,
     },
     {
       name: 'Practice',
-      component: Private.Homepage,
+      component: Private.Practice,
     },
   ]);
   return (

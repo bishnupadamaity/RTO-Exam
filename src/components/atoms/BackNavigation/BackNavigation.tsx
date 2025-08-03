@@ -14,55 +14,36 @@ const BackNavigation: React.FC<{
   title?: string;
   textAlign?: 'center' | 'auto' | 'left' | 'right' | 'justify';
   isCustomStatusBar?: boolean;
-}> = ({goBack, title, textAlign = 'center', isCustomStatusBar = false}) => {
+  backgroundColor?: string;
+}> = ({goBack, title, textAlign = 'center', backgroundColor = '#fff'}) => {
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   const handleBackPress = () => {
-    console.log('Handle back press clicked >>>>>');
     if (goBack) {
       goBack();
     } else if (navigation.canGoBack()) {
       navigation.goBack();
     }
-    // else {
-    //     navigation.navigate('RootPage');
-    // }
   };
 
-  return isCustomStatusBar ? (
-    <LinearGradient
-      colors={[COLOR.gray, COLOR.gray2, COLOR.gray3]}
-      start={{x: 0, y: 0}}
-      end={{x: 1, y: 0}}
-      style={styles.header}>
-      <TouchableOpacity
-        style={[styles.backButton, {paddingHorizontal: 8}]}
-        onPress={handleBackPress}>
-        <Icon
-          name="chevron-left"
-          type={IconType.Feather}
-          size={25}
-          color={'white'}
-        />
-      </TouchableOpacity>
-      <View style={styles.titleContainer}>
-        <Text style={[styles.title, {textAlign}]}>{title}</Text>
-      </View>
-      <View style={styles.emptySpace} />
-    </LinearGradient>
-  ) : (
+  return (
     <View
       style={[
         styles.header,
-        {backgroundColor: 'red', minHeight: HEIGHT * 0.11},
+        {
+          backgroundColor: backgroundColor,
+          borderBottomWidth: 1,
+          borderBottomColor: COLOR.gray5,
+        },
+        // {backgroundColor: 'red'},
       ]}>
       <TouchableOpacity style={styles.backButton} onPress={handleBackPress}>
         <Icon
           name="chevron-left"
           type={IconType.Feather}
           size={25}
-          color={'black'}
+          color={COLOR.black}
         />
       </TouchableOpacity>
       <View style={styles.titleContainer}>
@@ -80,14 +61,14 @@ const styles = StyleSheet.create({
     paddingVertical: RFValue(7),
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 4,
   },
   backButton: {
-    backgroundColor: 'transparent',
+    backgroundColor: COLOR.white,
     borderRadius: RFValue(25),
-    padding: 1,
-    borderWidth: 0,
-    borderColor: COLOR.white,
+    height: 35,
+    width: 35,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   titleContainer: {
     flex: 1,
@@ -95,9 +76,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   title: {
-    fontWeight: '500',
-    color: COLOR.white || '#000',
-    fontSize: responsiveFontSize(2.1),
+    fontWeight: '600',
+    color: '#000',
+    fontSize: responsiveFontSize(2.2),
+    marginTop: -5,
   },
   emptySpace: {
     width: RFValue(40),

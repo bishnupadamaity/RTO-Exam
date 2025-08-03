@@ -6,6 +6,7 @@ export const COLOR = {
   darkblue: '#0743A1',
   lightblue: '#3B82F6',
   lightblue2: '#81D4FA',
+  lightblue3: '#E3F2FD',
 
   gray: '#6B7280',
   gray2: '#9CA3AF',
@@ -13,6 +14,8 @@ export const COLOR = {
   gray4: '#E5E7EB',
   gray5: '#F3F4F6',
   gray6: '#F9FAFB',
+  gray7: '#F5F5F5',
+  bg: '#fafafa',
 
   green: '#22C55E',
   green2: '#16A34A',
@@ -24,10 +27,12 @@ export const COLOR = {
   blue3: '#1D4ED8',
   blue4: '#1E40AF',
 
-  yellow: '#FBBF24',
+  yellow: '#FEF9C3',
+  yellow1: '#FBBF24',
   yellow2: '#F59E0B',
-  yellow3: '#C2410C',
-  yellow4: '#9A3412',
+  yellow3: '#CD8A04',
+  yellow4: '#C2410C',
+  yellow5: '#9A3412',
 
   BorderBlue: '#D7E5FF',
 };

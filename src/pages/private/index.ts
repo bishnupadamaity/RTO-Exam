@@ -1,1 +1,9 @@
-export {default as Homepage } from './Homepage/Homepage'
+export {default as Homepage} from './Homepage/Homepage';
+export {default as QBank} from './QBank/QBank';
+export {default as BasicTrafficRules} from './BasicTrafficRules/BasicTrafficRules';
+export {default as RoadSignAndSignals} from './RoadSignAndSignals/RoadSignAndSignals';
+export {default as RoadSigns} from './RoadSigns/RoadSigns';
+export {default as Exam} from './Exam/Exam';
+export {default as ExamTaker} from './ExamTaker/ExamTaker';
+export {default as Practice} from './Practice/Practice';
+export {default as PriceTaker} from './PriceTaker/PriceTaker';
